@@ -2,13 +2,13 @@
 <!--
   Copyright (C) 2009-2011 FuseSource Corp.
   http://fusesource.com
-  
+
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
-  
+
      http://www.apache.org/licenses/LICENSE-2.0
-  
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -17,7 +17,7 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
+
   <parent>
     <groupId>org.fusesource</groupId>
     <artifactId>fusesource-pom</artifactId>
@@ -28,16 +28,16 @@
   <artifactId>hawtjni-project</artifactId>
   <version>1.15-SNAPSHOT</version>
   <packaging>pom</packaging>
-  
+
   <name>HawtJNI</name>
   <description>A JNI code generator based on the JNI generator used by the eclipse SWT project</description>
 
   <properties>
     <forge-project-id>hawtjni</forge-project-id>
     <forge-project-id-uc>HAWTJNI</forge-project-id-uc>
-    
+
     <scalate-version>1.5.1</scalate-version>
-    <scalamd-version>1.5</scalamd-version>    
+    <scalamd-version>1.5</scalamd-version>
     <slf4j-version>1.6.1</slf4j-version>
     <jetty-plugin-version>7.0.1.v20091125</jetty-plugin-version>
     <scala-plugin-version>2.15.2</scala-plugin-version>
@@ -51,9 +51,9 @@
     <system>github</system>
     <url>https://github.com/fusesource/hawtjni/issues</url>
   </issueManagement>
-  
+
   <mailingLists>
-    
+
     <mailingList>
       <name>Discussion List</name>
       <archive>http://groups.google.com/group/${forge-project-id}</archive>
@@ -82,7 +82,7 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-  
+
   <scm>
     <connection>scm:git:git://forge.fusesource.com/${forge-project-id}.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:fusesources/hawtjni.git</developerConnection>
@@ -92,17 +92,17 @@
 
   <distributionManagement>
     <repository>
-        <id>sonatype-nexus-staging</id>
-        <name>Sonatype Staging Repository</name>
-        <url> https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+         <id>csean</id>
+         <name>Nexus Comtec</name>
+         <url>http://nexus.comtec.lan/content/repositories/Csean</url>
     </repository>
     <snapshotRepository>
-        <id>sonatype-nexus-snapshots</id>
-        <name>Sonatype Snapshot Repository</name>
-        <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+         <id>csean_snapshots</id>
+         <name>Nexus Comtec Snapshots</name>
+         <url>http://nexus.comtec.lan/content/repositories/csean_snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
-  
+
   <developers>
     <developer>
       <id>chirino</id>
@@ -125,7 +125,7 @@
           <target>1.5</target>
         </configuration>
       </plugin>
-        
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-idea-plugin</artifactId>
@@ -157,7 +157,7 @@
 
     </plugins>
   </build>
-  
+
   <reporting>
     <plugins>
       <plugin>
